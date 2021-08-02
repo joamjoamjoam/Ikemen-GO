@@ -1,2 +1,5 @@
 #!/bin/bash
-make TGAS='-tags al_cmpt' linnux
+sudo apt-get install build-essential libgtk-3-dev libasound2-dev
+echo Building Using $(go version)
+make TAGS='-tags al_cmpt' linux
+
